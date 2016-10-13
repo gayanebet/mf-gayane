@@ -124,31 +124,52 @@ position: relative;
     width: 75px;
     height: 28px;
     background-position: -5px -5px;
+margin-top: 25px;
+
 }
 
 .sprite-good{
     width: 56px;
     height: 58px;
     background-position: -5px -43px;
+    margin-top: 5px;
+    margin-left: 15px;
 }
 
 .sprite-photo {
     width: 65px;
     height: 50px;
     background-position: -90px -5px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 .sprite-view {
     width: 72px;
     height: 34px;
     background-position: -71px -65px;
+margin-top: 21px;
 }
-.advantages-item{
+.advantages{
+  margin: 45px 0 45px 0;
 }
+.advantages__item{
+  display: inline-block;
+  /*vertical-align: middle;*/
+}
+.advantages__text{
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  /*margin: 0;*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .about{
 display: block;
 margin-top: 49px;
-margin-bottom: 105px;
+padding-bottom: 100px;
 position: relative;
 }
 .about:after{
@@ -161,15 +182,17 @@ position: relative;
  margin-right: auto;
  left: 0;
  right: 0;
-bottom: -105px;
-
+bottom: 0;
 }
 .first-title,.about-description__text, .gallery-title, .flight-title{
   color: #444444;
+  font-weight: 500;
 }
 .first-title{
   font-size: 32px;
   position: relative;
+    margin-top: 40px;
+  margin-bottom: 50px;
 }
 .first-title:before{
   content: "";
@@ -194,22 +217,23 @@ bottom: -105px;
   height: 10px;
   width: 708px;
   bottom: -5px;
-   margin: auto;
+   margin: auto
  left: 0;
  right: 0;
 }
 .gallery{
   text-align: center;
 }
-.gallery-title{
+.gallery-title,.second-title{
     font-size: 32px;
   position: relative;
   text-align: center;
   position: relative;
   margin-top: 100px;
   margin-bottom: 90px;
+  color: #444;
 }
-.gallery-title:after{
+.gallery-title,.second-title:after{
     content: "";
   position: absolute;
   background-color: #3e98d7;
@@ -221,22 +245,50 @@ bottom: -105px;
   margin-left: auto;
   margin-right: auto;
 }
-.gallery-item{
-  display: inline-block;
-  border: 1px solid #000;
+.gallery__item{
   width: 245px;
   height: 245px;
-  size: landscape;
+  border: 1px solid #000;
+
 }
-.gallery-item img{
-  
-  background-size: all;
+.gallery__item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  }
+
+
+.gallery__button--back{
+  position: relative;
+  /*margin: 10px;*/
 }
-.button-slyle--next{
+.gallery__button--back:after{
   position: absolute;
+  content: "";
+  background-image: url(../img/icoback.png);
+  height: 33px;
+  width: 20px;
 }
-.button-slyle--back{
+/*почему не работает*/
+.gallery__button--back:after:hover{
   position: absolute;
+  content: "";
+  background-image: url(../img/icobackhover.png);
+  height: 33px;
+  width: 20px;
+}
+.gallery__button--next{
+  position: relative;
+  /*margin: 10px;*/
+}
+.gallery__button--next:after{
+  position: absolute;
+  content: "";
+  background-image: url(../img/iconexr.png);
+  height: 31px;
+  width: 19px;
+
 }
 .flight__about{
   position: relative;
@@ -334,12 +386,33 @@ bottom: -105px;
   margin-top: 31px;
   margin-bottom: 31px;
 }
-.calculate__title {
-  margin-top: 40px;
-  margin-bottom: 50px;
+
+.price{
+  padding-top: 30px;
+  position: relative;
+  padding-bottom: 70px;
 }
+.price:after{
+  position: absolute;
+  content: "";
+  background-color: #cccccc;
+  height: 1px;
+  width: 1140px;
+ margin-left: auto;
+ margin-right: auto;
+ left: 0;
+ right: 0;
+bottom: 0;
+}
+.calculate__text{
+  font-size: 18px;
+  color: #444;
+}
+
 .calculate-block__value{
   margin-top: 40px;
+  font-size: 18px;
+  color: #444;
 }
 .calculate-block__value p{
 margin: 30px 0 30px 0;
@@ -347,20 +420,142 @@ margin: 30px 0 30px 0;
 .calculate-block__value form{
   width: 100%;
 }
+
 select{
   width: 100%;
 padding: 10px;
 border: 1px solid #f2f2f2;
 border-radius: 5px;
 margin-top: 16px;
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+color: #444;
 }
 select:first-child{
   margin-top: 10px;
 }
-input {
+.form-name,.form-tel {
   width: 100%;
 padding: 10px;
 border: 1px solid #f2f2f2;
 border-radius: 5px;
 margin-top: 16px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+color: #444;
+position: relative;
+
+}
+.form-name:after{
+  position: absolute;
+  content: "mnbvbn";
+  background-image: url(../img/icoperson.png);
+  height: 15px;
+  width: 15px;
+}
+.calculate-price__title{
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+  color: #444;
+  font-weight: 500;
+  margin-right: 13px;
+}
+.calculate-price__result{
+  color: #f97e7e;
+  font-size: 38px;
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 500;
+}
+.calculate-price__button {
+  text-decoration: none;
+  background-color: #46b0dc;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  text-align: left;
+  float: right;
+  margin-top: 5px;
+}
+.faq{
+  color: #444;
+  padding: 78px 0 100px 0;
+}
+.faq__mail{
+  color: #444;
+}
+.third-title{
+  font-size: 26px;
+}
+.faq-question{
+  font-size: 18px;
+  margin-left: 50px;
+  position: relative;
+}
+.faq-question:before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/icoquestion.png);
+  width: 40px;
+  height: 34px;
+  margin-left: -50px;
+  margin-top: -5px;
+}
+.faq-answer{
+  font-size: 16px;
+  margin-left: 70px;
+}
+.statistics{
+  background-image: url(../img/bgrreview.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.statistics__num{
+  text-align: center;
+  border: 6px solid white;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  /*padding: 50px;*/
+  font-size: 42px;
+  color: white;
+  padding-top: 25%;
+  margin-left: 25px;
+}
+.statistics__text{
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.team__pic{
+  width: 164px;
+  height: 164px;
+  border-radius: 100%;
+margin-left: 55px;
+  
+}
+.team__pic:hover{
+   url(../img/face.jpg);
+  width: 164px;
+  height: 164px;
+  border-radius: 100%;
+  z-index: 5;
+}
+.team__name{
+font-size: 22px;
+color: #444;
+text-align: center;
+font-weight: bold;
+}
+.team__job{
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
 }

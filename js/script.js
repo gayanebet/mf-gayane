@@ -9,6 +9,7 @@ $('a').on('click', function(e){
   $(".owl-carousel").owlCarousel({
     items:4, 
     nav:true,
+    
   });
 
 });

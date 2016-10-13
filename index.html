@@ -39,12 +39,49 @@
 
   <div class="advantages">
     <div class="container">
-      <ul class="row">
-        <li class="col-3 advantages-item sprite sprite-good ">Современный надежный шар</li>
-        <li class="col-3 advantages-item sprite-eye sprite">Обучение пилотированию</li>
-        <li class="col-3 advantages-item sprite-photo sprite">Фотосьемка в полёте</li>
-        <li class="col-3 advantages-item sprite-view sprite">Потрясающие виды</li>
-      </ul>
+      <div class="row">
+        <div class="col-3">
+          <div class="row advantages__item">
+            <div class="col-4">
+              <div class="sprite-good sprite advantages__ico"></div>
+            </div>
+              <div class="col-8">
+                <p class="advantages__text">Современный <br> надежный шар</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row advantages__item">
+            <div class="col-4">
+              <div class="sprite-eye sprite advantages__ico"></div>
+            </div>
+              <div class="col-8">
+                <p class="advantages__text">Обучение <br> пилотированию</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row advantages__item">
+            <div class="col-4">
+              <div class="sprite-photo sprite advantages__ico"></div>
+            </div>
+              <div class="col-8">
+                <p class="advantages__text">Фотосъемка<br> в полёте  </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row advantages__item">
+            <div class="col-4">
+              <div class="sprite-view sprite advantages__ico"></div>
+            </div>
+              <div class="col-8">
+                <p class="advantages__text">Потрясающие  <br> виды</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -67,16 +104,20 @@
  <h2 class="gallery-title">Галерея</h2>
   <div class="container">
     <div class="row">
-      <div class="col-12 owl-carousel">
-   <div class="gallery-item"><img src="img/gallery4.jpg" alt=""></div>
-   <div class="gallery-item"><img src="img/gallery3.jpg" alt=""></div>
-   <div class="gallery-item"><img src="img/gallery2.jpg" alt=""></div>
-   <div class="gallery-item"><img src="img/gallery1.jpg" alt=""></div>
-   <div class="gallery-item"><img src="img/gallery5.jpg" alt=""></div>
+      <div class="col-1">
+        <a href="" class="gallery__button--back"></a>
+      </div>
+      <div class="col-10 owl-carousel">
+   <div class="gallery__item"><img src="img/gallery4.jpg" alt=""></div>
+   <div class="gallery__item"><img src="img/gallery3.jpg" alt=""></div>
+   <div class="gallery__item"><img src="img/gallery2.jpg" alt=""></div>
+   <div class="gallery__item"><img src="img/gallery1.jpg" alt=""></div>
+   <div class="gallery__item"><img src="img/gallery5.jpg" alt=""></div>
+      </div>
+      <div class="col-1">
+        <a href="" class="gallery__button--next"></a>
       </div>
     </div>
-          <button class="button-slyde--back">Back</button>
-          <button class="button-slyde--next">Next</button>
   </div>
 </div>
 
@@ -155,8 +196,8 @@
                 <option value="s3">3</option>
                 <option value="s4">4</option>
               </select><br>
-              <input type="name"><br>
-              <input type="telephone"><br>
+              <input class="form-name" type="name"><br>
+              <input class="form-tel" type="telephone"><br>
             </form>
           </div>
         </div>
@@ -165,7 +206,6 @@
         <a href=" " class="calculate-price__button">Поехали</a>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -176,7 +216,7 @@
         <h2 class="first-title">Способы оплаты</h2>
         <h3 class="third-title">Наличными</h3>
         <p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
-        <p>— по телефону: +7 (812) 640-19-39 <br> — или по почте: mnebyvnebo@gmail.com</p>
+        <p>— по телефону: +7 (812) 640-19-39 <br> — или по почте: <a class="faq__mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a></p>
         <p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
         <h3 class="third-title">Курьеру</h3>
         <p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
@@ -206,20 +246,20 @@
     <div class="col-10">
     <div class="row">
       <div class="col-3">
-        <span class="statistics__num">700</span>
+        <p class="statistics__num"> 700
     <p class="statistics__text">Полётов в год</p>
       </div>
       <div class="col-3">
-        <span class="statistics__num">3000</span>
+        <p class="statistics__num">3000</p>
     <p class="statistics__text">Средняя дальность в метрах</p>
       </div>
       <div class="col-3">
-        <span class="statistics__num">3</span>
-    <p class="statistics__text">Воздушных шаров</p>
+        <p class="statistics__num">3</p>
+    <p class="statistics__text">Воздушных <br>шаров</p>
       </div>
       <div class="col-3">
-        <span class="statistics__num">12</span>
-    <p class="statistics__text">Человек в команде</p>
+        <p class="statistics__num">12</p>
+    <p class="statistics__text">Человек <br>в команде</p>
       </div>
     </div>
     </div>
@@ -232,22 +272,22 @@
     <h2 class="second-title">Команда инструкторов</h2>
     <div class="row">
       <div class="col-3">
-        <img src="" alt="" class="team__pic">
+        <img src="img/alena.jpg" alt="" class="team__pic">
         <p class="team__name">Мария Мариева</p>
         <p class="team__job">Старший пилот</p>
       </div>
       <div class="col-3">
-        <img src="" alt="" class="team__pic">
+        <img src="img/nadejda.jpg" alt="" class="team__pic">
         <p class="team__name">Надежда Надеждова</p>
         <p class="team__job">Второй пилот</p>
       </div>
       <div class="col-3">
-        <img src="" alt="" class="team__pic">
+        <img src="img/irina.jpg" alt="" class="team__pic">
         <p class="team__name">Ирина Иринова</p>
         <p class="team__job">Авиадиспетчер</p>
       </div>
       <div class="col-3">
-        <img src="" alt="" class="team__pic">
+        <img src="img/alena.jpg" alt="" class="team__pic">
         <p class="team__name">Алёна Алёновна</p>
         <p class="team__job">Автомеханил</p>
       </div>
@@ -289,7 +329,7 @@
         <a class="contacts__phone" href="tel:+78127543367">754-33-67</a>
       </div>
       <div class="col-4">
-      <a href="mailto:mnebyvnebo@gmail.com class="contacts__mail">mnebyvnebo@gmail.com</a>
+      <a href="mailto:mnebyvnebo@gmail.com" class="contacts__mail">mnebyvnebo@gmail.com</a>
         <a href="" class="contacts__vk"></a>
         <a href="" class="contacts__fb"></a>
         <a href="" class="contacs__inst"></a>
