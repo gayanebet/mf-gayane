@@ -1,0 +1,366 @@
+*{
+  box-sizing: border-box;
+}
+ul{
+  padding-left: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-width: 1200px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container:after, .row:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.row{
+margin-left: -18px;
+margin-right: -18px;
+}
+
+[class*="col-"]{
+  float: left;
+  padding-left: 18px;
+  padding-right: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-1 { width: 8.33%; } 
+.col-2 { width: 16.66%; } 
+.col-3 { width: 25%; } 
+.col-4 { width: 33.33%; } 
+.col-5 { width: 41.66%; } 
+.col-6 { width: 50%; } 
+.col-7 { width: 58.33%; } 
+.col-8 { width: 66.66%; } 
+.col-9 { width: 75%; } 
+.col-10 { width: 83.11%; } 
+.col-11 { width: 91.66%; } 
+.col-12 { width: 100%; }
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.logo {
+  color: white;
+  font-size: 22px;
+padding-top: 20px;
+display: inline-block;
+
+}
+.main-nav li{
+display: inline-block;
+padding-left: 19px;
+padding-right: 19px;
+vertical-align: middle;
+margin-top: 24px;
+float: right;
+
+}
+.main-nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.page-header{
+  background-color: #2c2c2c;
+  height: 70px;
+}
+.promo{
+  background-image: url(../img/bgrpromo.jpg);
+height: 645px;
+background-position: center;
+background-size: cover;
+text-align: center;
+}
+.promo-title{
+  text-align: center;
+  color: white;
+  font-size: 66px;
+  display: inline-block;
+  margin-top: 188px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.promo-btn{
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  text-decoration: none;
+margin-top: 180px;
+position: relative;
+}
+.promo-btn:before{
+  content: "";
+  position: absolute; 
+  background-image: url(../img/arrow.png);
+  width: 18px;
+  height: 29px;
+  top: 70px;
+  left: 40px;
+}
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-eye {
+    width: 75px;
+    height: 28px;
+    background-position: -5px -5px;
+}
+
+.sprite-good{
+    width: 56px;
+    height: 58px;
+    background-position: -5px -43px;
+}
+
+.sprite-photo {
+    width: 65px;
+    height: 50px;
+    background-position: -90px -5px;
+}
+
+.sprite-view {
+    width: 72px;
+    height: 34px;
+    background-position: -71px -65px;
+}
+.advantages-item{
+}
+.about{
+display: block;
+margin-top: 49px;
+margin-bottom: 105px;
+position: relative;
+}
+.about:after{
+  position: absolute;
+  content: "";
+  background-color: #cccccc;
+  height: 1px;
+  width: 1140px;
+ margin-left: auto;
+ margin-right: auto;
+ left: 0;
+ right: 0;
+bottom: -105px;
+
+}
+.first-title,.about-description__text, .gallery-title, .flight-title{
+  color: #444444;
+}
+.first-title{
+  font-size: 32px;
+  position: relative;
+}
+.first-title:before{
+  content: "";
+  position: absolute;
+  background-color: #3e98d7;
+  height: 6px;
+  width: 62px;
+  top: 50px;
+}
+.about-description__text{
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.about-video{
+  position: relative;
+}
+.about-video:before{
+  position: absolute;
+  content: "";
+  background-color: gray;
+  height: 10px;
+  width: 708px;
+  bottom: -5px;
+   margin: auto;
+ left: 0;
+ right: 0;
+}
+.gallery{
+  text-align: center;
+}
+.gallery-title{
+    font-size: 32px;
+  position: relative;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+.gallery-title:after{
+    content: "";
+  position: absolute;
+  background-color: #3e98d7;
+  height: 6px;
+  width: 62px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-item{
+  display: inline-block;
+  border: 1px solid #000;
+  width: 245px;
+  height: 245px;
+  size: landscape;
+}
+.gallery-item img{
+  
+  background-size: all;
+}
+.button-slyle--next{
+  position: absolute;
+}
+.button-slyle--back{
+  position: absolute;
+}
+.flight__about{
+  position: relative;
+  background-image: url(../img/path.png);
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-position: 0px 130px;
+  height: 400px;
+  margin-top: 100px;
+
+}
+.flight{
+  background-image: url(../img/bgrflight.jpg);
+  background-position: 0 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  text-align: center; 
+  margin-top: 100px;
+}
+.flight__title{
+    font-size: 32px;
+  position: relative;
+  text-align: center;
+  position: relative;
+}
+.flight__title:after{
+    content: "";
+  position: absolute;
+  background-color: #3e98d7;
+  height: 6px;
+  width: 62px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fly{
+  text-align: center;
+}
+.fly_title{
+  color: #454545;
+  font-size: 18px;
+  font-weight: bold;
+  /*width: 40px;*/
+  /*text-align: cent  er;*/
+  display: inline-block;
+}
+.fly_pic{
+  position: relative;
+  content: "";
+  background-image: url(../img/ball.png);
+  height: 65px;
+  width: 44px;
+  display: inline-block;
+}
+.fly_pic__num{
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 12px;
+}
+.fly--1{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+.fly--2{
+  position: absolute;
+  top: 140px;
+  left: 240px;
+}
+.fly--3{
+  position: absolute;
+  top: 20px;
+  left: 530px;
+}
+.fly--4{
+  position: absolute;
+  top: 140px;
+  right: 240px;
+}
+.fly--5{
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+.timer{
+  background-color: #f2f2f2;
+}
+.timer__title{
+  font-size: 32px;
+  color: #26668e;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+.calculate__title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.calculate-block__value{
+  margin-top: 40px;
+}
+.calculate-block__value p{
+margin: 30px 0 30px 0;
+}
+.calculate-block__value form{
+  width: 100%;
+}
+select{
+  width: 100%;
+padding: 10px;
+border: 1px solid #f2f2f2;
+border-radius: 5px;
+margin-top: 16px;
+}
+select:first-child{
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+padding: 10px;
+border: 1px solid #f2f2f2;
+border-radius: 5px;
+margin-top: 16px;
+}
