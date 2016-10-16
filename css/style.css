@@ -10,6 +10,7 @@ body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
   min-width: 1200px;
+  color: #444;
 }
 
 .container{
@@ -542,20 +543,122 @@ margin-left: 55px;
   
 }
 .team__pic:hover{
-   url(../img/face.jpg);
+  background-image:  url(../img/face.jpg);
   width: 164px;
   height: 164px;
   border-radius: 100%;
-  z-index: 5;
+  background-position: -100 -100;
+
 }
 .team__name{
 font-size: 22px;
 color: #444;
 text-align: center;
-font-weight: bold;
+font-weight: 500;
 }
 .team__job{
   font-weight: 500;
   font-size: 18px;
   text-align: center;
+}
+.center{
+  text-align: center;
+}
+.review__pic{
+  width: 102px;
+  height: 102px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.review__name{
+  font-size: 22px;
+  font-weight: 500;
+}
+.review__text{
+  font-size: 18px;
+}
+.contacts{
+  background-image: url(../img/bgrcontacts.jpg);
+  background-size: cover;
+  margin-top: 75px;
+padding: 100px 0 60px 0;
+}
+.contacts__call{
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+}
+.contacts__call:before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/plane.png);
+  width: 62px;
+  height: 62px;
+  left: 0;right: 0;
+  margin: 0 auto;
+  top: -75px;
+}
+.contacts__address{
+  font-size: 18px;
+  color: #616161;
+  font-weight: 500;
+}
+
+.contacts__city{
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+}
+.contacts__city:before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/address.png);
+  height: 50px;
+  width: 35px;
+  left: -50px;
+  top: 0px;
+
+}
+.contacts__street{
+  color: #616161;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacts__phone{
+font-size: 26px;
+font-weight: 700;
+color: #292929;
+text-decoration: none;
+}
+.contacts__mail{
+  display: inline-block;
+  position: relative;
+  color: #444;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+.contacts__mail:before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/icomail.png);
+  width: 23px;
+  height: 17px;
+  left: -35px;
+  top: 7px;
+}
+.contacts__vk{
+  background-image: url(../img/icovk.png);
+  width: 22px;
+  height: 22px;
+}
+.contacts__fb{
+  background-image: url(../img/icofb.png);
+  width: 22px;
+  height: 22px;
+}
+.contacs__inst{
+  background-image: url(../img/icoinst.png);
+  width: 22px;
+  height: 22px;
 }
