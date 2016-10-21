@@ -79,7 +79,7 @@ float: right;
 }
 .page-header{
   background-color: #2c2c2c;
-  height: 70px;
+  min-height: 70px;
 }
 .promo{
   background-image: url(../img/bgrpromo.jpg);
@@ -214,13 +214,14 @@ bottom: 0;
 .about-video:before{
   position: absolute;
   content: "";
-  background-color: gray;
+  background-color: #cccccc;
   height: 10px;
   width: 708px;
   bottom: -5px;
-   margin: auto
- left: 0;
+   left: 0;
  right: 0;
+   margin: auto;
+
 }
 .gallery{
   text-align: center;
@@ -249,8 +250,14 @@ bottom: 0;
 .gallery__item{
   width: 245px;
   height: 245px;
-  border: 1px solid #000;
-
+  margin-left: 25px;
+  transition: opacity 0.5s ease-out;
+  opacity: 0.7;
+  /*border: 1px solid #000;*/
+}
+.gallery__item:hover{
+    opacity: 1;
+    /*transition: opacity 0.5s ease-in;*/
 }
 .gallery__item img{
   width: 100%;
@@ -260,9 +267,9 @@ bottom: 0;
   }
 
 
-.gallery__button--back{
+/*.gallery__button--back{
   position: relative;
-  /*margin: 10px;*/
+
 }
 .gallery__button--back:after{
   position: absolute;
@@ -271,7 +278,7 @@ bottom: 0;
   height: 33px;
   width: 20px;
 }
-/*почему не работает*/
+
 .gallery__button--back:after:hover{
   position: absolute;
   content: "";
@@ -281,7 +288,7 @@ bottom: 0;
 }
 .gallery__button--next{
   position: relative;
-  /*margin: 10px;*/
+
 }
 .gallery__button--next:after{
   position: absolute;
@@ -289,8 +296,55 @@ bottom: 0;
   background-image: url(../img/iconexr.png);
   height: 31px;
   width: 19px;
+}
+*/
+.gallery__list{
+  position: relative; 
+  ml8%
+}
+
+.owl-prev,.owl-next{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icobackhover.png);
+  opacity: 0.5;
+  width: 20px;
+  height: 33px;
+  z-index: 150;
+  top: 45%;
+}
+.owl-prev:hover{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icobackhover.png);
+  opacity: 1;
+  width: 20px;
+  height: 33px;
+  z-index: 150;
+  top: 45%;
+}
+.owl-next:hover{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icobackhover.png);
+  opacity: 1;
+  width: 20px;
+  height: 33px;
+  z-index: 150;
+  top: 45%;
 
 }
+.owl-prev{
+  position: absolute; 
+  left: -20px;  
+}
+.owl-next{
+  position: absolute;
+right: -20px; 
+transform: rotate(180deg);
+}
+
+
 .flight__about{
   position: relative;
   background-image: url(../img/path.png);
@@ -380,6 +434,7 @@ bottom: 0;
 }
 .timer{
   background-color: #f2f2f2;
+
 }
 .timer__title{
   font-size: 32px;
@@ -387,7 +442,14 @@ bottom: 0;
   margin-top: 31px;
   margin-bottom: 31px;
 }
-
+.count-number{
+  font-size: 32px;
+  color: #26668e;
+}
+.measure{
+  color: #26668e;
+  margin-right: 30px;
+}
 .price{
   padding-top: 30px;
   position: relative;
@@ -405,18 +467,24 @@ bottom: 0;
  right: 0;
 bottom: 0;
 }
+.clock{
+  text-align: right;
+  font-weight: 500; 
+  margin-top: 31px; 
+}
 .calculate__text{
   font-size: 18px;
   color: #444;
 }
 
 .calculate-block__value{
-  margin-top: 40px;
+  margin-top: 60px;
   font-size: 18px;
   color: #444;
 }
+
 .calculate-block__value p{
-margin: 30px 0 30px 0;
+margin: 10px 0 35px 0;
 }
 .calculate-block__value form{
   width: 100%;
@@ -424,23 +492,29 @@ margin: 30px 0 30px 0;
 
 select{
   width: 100%;
-padding: 10px;
-border: 1px solid #f2f2f2;
+padding: 9px;
+border: 1px solid #d5d5d5;
 border-radius: 5px;
-margin-top: 16px;
+/*margin-top: 16px;*/
 font-size: 18px;
 font-family: 'Roboto', sans-serif;
 color: #444;
+margin-top: 14px;
 }
 select:first-child{
-  margin-top: 10px;
+  margin-top: 0;
 }
+input{
+  margin-top: 14px;
+}
+
+
 .form-name,.form-tel {
   width: 100%;
-padding: 10px;
-border: 1px solid #f2f2f2;
+padding: 9px;
+border: 1px solid #d5d5d5;
 border-radius: 5px;
-margin-top: 16px;
+/*margin-top: 16px;*/
 font-family: 'Roboto', sans-serif;
 font-size: 18px;
 color: #444;
@@ -535,20 +609,15 @@ position: relative;
   font-weight: 500;
   text-align: center;
 }
-.team__pic{
+img.team__pic{
   width: 164px;
   height: 164px;
   border-radius: 100%;
 margin-left: 55px;
-  
+transition: .5s ease-out;
 }
-.team__pic:hover{
-  background-image:  url(../img/face.jpg);
-  width: 164px;
-  height: 164px;
-  border-radius: 100%;
-  background-position: -100 -100;
-
+img.team__pic:hover{
+transition: .5s ease-in;
 }
 .team__name{
 font-size: 22px;
@@ -661,4 +730,42 @@ text-decoration: none;
   background-image: url(../img/icoinst.png);
   width: 22px;
   height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-footer{
+  background-color: #2c2c2c;
+  min-height: 70px;
 }
