@@ -21,7 +21,7 @@
             <li><a href="">План полёта</a></li>
             <li><a href="">Заказать</a></li>
             <li><a href="">Фотографии</a></li>
-            <li><a href="#about">Кто мы</a></li>
+            <li><a href="#about-href">Кто мы</a></li>
           </ul>
         </nav>
       </div>
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-<div id="about" class="about">
+<div id="about-href" class="about">
   <div class="container">
     <div class="row">
       <div class="col-4 about-description">
@@ -358,9 +358,11 @@ onmouseout="this.src='images/greenhtml0.jpeg'; this.width=64;this.height=60;" />
       </div>
       <div class="col-4">
       <a href="mailto:mnebyvnebo@gmail.com" class="contacts__mail">mnebyvnebo@gmail.com</a><br>
-        <a href="" class="contacts__vk"></a>
-        <a href="" class="contacts__fb"></a>
-        <a href="" class="contacs__inst"></a>
+        <ul class="contacts__network">
+          <li><a href="" class="contacts__network__vk"><img src="/img/icovk.png" alt=""></a></li>
+          <li><a href="" class="contacts__network__fb"><img src="/img/icofb.png" alt=""></a></li>
+          <li><a href="" class="contacts__network__inst"><img src="/img/icoinst.png" alt=""></a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -387,6 +389,7 @@ onmouseout="this.src='images/greenhtml0.jpeg'; this.width=64;this.height=60;" />
         </nav>
       </div>
     </div>
+    <a class="page-footer__btn-up" href=""><img src="img/icoup.png" alt=""></a>
 </footer>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery-migrate-1.4.1.min.js"></script>
